@@ -1,6 +1,6 @@
 FROM hilschernetpi/netpi-raspbian:1.2.0
 
-CMD ["sudo apt-get update"]
-CMD ["sudo apt-get install pip"]
-CMD ["sudo apt-get install"]
-CMD ["python -m pip install pyserial"]
+RUN sudo apt-get update
+RUN sudo apt-get install pip
+RUN sudo apt-get install
+RUN python -m pip install pyserial
